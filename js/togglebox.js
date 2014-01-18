@@ -12,7 +12,7 @@
         };
         
         var settings = jQuery.extend(defaults, options);
-        this.each(function() {
+        return this.each(function() {
             var $this = $(this);
             // alles mit div wrappen, außer Boxüberschrift
             var toggleHelper = $this.children().not(settings.headingSelector).wrapAll('<div class="toogle-helper"></div>').parent();
